@@ -1,5 +1,4 @@
-## Team 36
-### Krishna Patel, Justin Deal, Anthony Marshall, Ben Pooser, Trevor Stanfield
+## Team 36 - Krishna Patel, Justin Deal, Anthony Marshall, Ben Pooser, Trevor Stanfield
 # MOTIVATION OF PROJECT
 
 Many different types of breast cancer show relatively few signs and symptoms, and the inconspicuous nature of this disease only exacerbates the danger. 1 in 8 women in the United States will develop breast cancer in her life. In 2020, it is predicted that about 42,000 women in the United States are expected to die from breast cancer [5]. 
@@ -11,11 +10,11 @@ Invasive ductal carcinoma (IDC) is the most common form of breast cancer, repres
 ## Dataset
 Our dataset is a Kaggle dataset provided by Andrew Janowczyk. It consists of 5547 breast histology images [4].
 
-Images in this dataset are of size 50x50x3. Each file name follows this format, which reveals if the image is cancerous images or not images of IDC: u_xX_yY_classC.png   — > example 10253_idx5_x1351_y1101_class0.png
+Images in this dataset are of size 50x50x3. Each file name follows this format, which reveals if the image is cancerous images or not images of IDC: u_xX_yY_classC.png => example 10253_idx5_x1351_y1101_class0.png.
 
 - u : the patient ID (i.e. 10253_idx5)
-- X : the x-coordinate of potential IDC
-- Y : the y-coordinate of potential IDC
+- X : the x-coordinate of potential IDC (i.e. x1351)
+- Y : the y-coordinate of potential IDC (i.e. y1101)
 - C : the class where 0 is non-IDC and 1 is IDC [6]
 
 ## Data Preprocessing
