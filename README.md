@@ -1,5 +1,3 @@
-### Image Detection of Invasive Ductal Carcinoma in Breast Tissue
-
 ### Krishna Patel, Justin Deal, Anthony Marshall, Ben Pooser, Trevor Stanfield
 
 # MOTIVATION OF PROJECT
