@@ -1,3 +1,5 @@
+## Image Detection of Invasive Ductal Carcinoma Breast Cancer
+
 ## Team 36 - Krishna Patel, Justin Deal, Anthony Marshall, Ben Pooser, Trevor Stanfield
 # MOTIVATION OF PROJECT
 
