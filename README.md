@@ -11,7 +11,7 @@ Invasive ductal carcinoma (IDC) is the most common form of breast cancer, repres
 ## Dataset
 Our dataset is a Kaggle dataset provided by Andrew Janowczyk. It consists of 5547 breast histology images [4].
 
-Images in this dataset are of size 50x50x3. Each file name follows this format, which reveals if the image is cancerous images or not images of IDC: u_xX_yY_classC.png => example 10253_idx5_x1351_y1101_class0.png.
+Images in this dataset are of size 50x50x3. Each file name follows this format, which reveals if the image is cancerous images or not: u_xX_yY_classC.png => example 10253_idx5_x1351_y1101_class0.png.
 
 - u : the patient ID (i.e. 10253_idx5)
 - X : the x-coordinate of potential IDC (i.e. x1351)
