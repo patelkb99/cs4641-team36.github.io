@@ -1,4 +1,4 @@
-## Team 36 - Krishna Patel, Justin Deal, Anthony Marshall, Ben Pooser, Trevor Stanfield
+### Krishna Patel, Justin Deal, Anthony Marshall, Ben Pooser, Trevor Stanfield
 # MOTIVATION OF PROJECT
 
 Many different types of breast cancer show relatively few signs and symptoms, and the inconspicuous nature of this disease only exacerbates the danger. 1 in 8 women in the United States will develop breast cancer in her life. In 2020, it is predicted that about 42,000 women in the United States are expected to die from breast cancer [5]. 
