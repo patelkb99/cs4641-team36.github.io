@@ -20,8 +20,7 @@ Images in this dataset are of size 50x50x3. Each file name follows this format, 
 
 ### Example of the images:
 
-![Examples of Dataset](/images/datasetExample.png)
-Format: ![Alt Text](url)
+![Examples of Dataset](./images/datasetExample.png)
 
 ## Data Preprocessing
 
