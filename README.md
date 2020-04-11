@@ -18,6 +18,11 @@ Images in this dataset are of size 50x50x3. Each file name follows this format, 
 - Y : the y-coordinate of potential IDC (i.e. y1101)
 - C : the class where 0 is non-IDC and 1 is IDC [6]
 
+### Example of the images:
+
+![Examples of Dataset](/images/datasetExample.png)
+Format: ![Alt Text](url)
+
 ## Data Preprocessing
 
 Add information on data preprocessing
