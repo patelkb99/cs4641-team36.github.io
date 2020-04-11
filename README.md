@@ -20,7 +20,7 @@ Images in this dataset are of size 50x50x3. Each file name follows this format, 
 
 ### Example of the images:
 
-![Examples of Dataset](https://github.com/patelkb99/cs4641-team36.github.io/tree/master/images/datasetExample.png)
+![Examples of Dataset](./images/datasetExample.png)
 
 ## Data Preprocessing
 
