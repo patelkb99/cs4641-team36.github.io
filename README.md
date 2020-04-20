@@ -121,7 +121,18 @@ From these charts, we can see that the validation loss is at a minimum at the x 
 
 --blurb describing next --
 
---Layer Visualization
+### CNN Layers
+
+<img src="images/white.jpg" width = "10"/>
+
+<div>
+<img src="images/CNNLayers.png" />
+</div>
+
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Graphic 1. Visualization of Graphics Layers_
+
+
+<img src="images/white.jpg" width = "10"/>
 
 --blurb
 
