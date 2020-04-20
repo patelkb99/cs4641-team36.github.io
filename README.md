@@ -87,15 +87,18 @@ The model was also improved by changing the color space of the input image. The 
 
 
 <!-- ![Image 1. Color Space Modification: HSV](images/ColorSpace_HSV.png) ![Image 2. Color Space Modification: LUV](images/ColorSpace_LUV.png) -->
+
+<img src="images/white.jpg" width = "10"/>
+
 <div>
-<img src="images/white.jpg" width = "100"/>
+<img src="images/white.jpg" width = "110"/>
 <img src="images/ColorSpace_HSV.png" />
 <img src="images/white.jpg" width = "100"/>
 <img src="images/ColorSpace_LUV.png" />
 </div>
 
 
-<img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/>_Image 1. Color Space Modification: HSV_
+<img src="images/white.jpg" width = "30"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/>_Image 1. Color Space Modification: HSV_
 <img src="images/white.jpg" width = "20"/>
 <img src="images/white.jpg" width = "20"/>
 <img src="images/white.jpg" width = "10"/>
