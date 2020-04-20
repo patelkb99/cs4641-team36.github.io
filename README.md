@@ -108,20 +108,35 @@ _Image 2. Color Space Modification: LUV_
 
 -- Potential Visualization of network architecture. --
 
+![](images/IsToDo.png)
+
 The resulting learning curve shows the average loss and accuracy of the 5 validation folds plotted against the training data over 30 epochs. The recall chart was omitted because both the training and validation recall followed a strong logarithmic curve.
 
 -- insert aforementioned curves --
+
+![](images/IsToDo.png)
 
 From these charts, we can see that the validation loss is at a minimum at the x epoch and that the validation accuracy peaks at the y epoch. Because of this, the final model was trained over z epochs.
 
 -- confusion matrix
 
+![](images/IsToDo.png)
+
 --blurb describing next --
 
+![](images/IsToDo.png)
 
 --blurb
 
+![](images/IsToDo.png)
+
 --heat map
+
+![](images/IsToDo.png)
+
+--Results--
+
+![](images/IsToDo.png)
 
 # Supervised Learning Models
 ###### Linear Regression, k-Nearest Neighbors, Support Vector Machine, and Neural Network
@@ -230,6 +245,8 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 <img src="images/white.jpg" width = "10"/>
 
 # Conclusion
+
+![](images/IsToDo.png)
 
 # Contributions
 - Krishna Patel - Supervised Learning Methods, Github pages setup
