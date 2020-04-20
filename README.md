@@ -98,6 +98,7 @@ The model was also improved by changing the color space of the input image. The 
 <img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/>_Image 1. Color Space Modification: HSV_
 <img src="images/white.jpg" width = "20"/>
 <img src="images/white.jpg" width = "20"/>
+<img src="images/white.jpg" width = "10"/>
 _Image 2. Color Space Modification: LUV_
 
 
@@ -137,14 +138,17 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 - `SVM: 0.842533 (0.008315)`
 - `DTC: 0.742400 (0.012744)`
 
+<img src="images/white.jpg" width = "10"/>
+
 <div>
-    <figure width="45%" text-align= "center">
-    <img src="images/Results_50%Variance.png" />
-    <figcaption>
-        Plot 1. Comparison of Algorithms at 50% Variance
-    </figcaption>
-    </figure>
+<img src="images/white.jpg" width = "10"/>
+<img src="images/Results_50Variance.png" width = "400"/>
 </div>
+
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 1. Comparison of Algorithms at 50% Variance_
+
+
+<img src="images/white.jpg" width = "10"/>
 
 <img src="images/white.jpg" width = "10"/>
 
@@ -156,14 +160,17 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 - `SVM: 0.839600 (0.008925)`
 - `DTC: 0.748800 (0.012368)`
 
+
+<img src="images/white.jpg" width = "20"/>
+
 <div>
-    <figure width="45%" text-align= "center">
-    <img src="images/Results_65%Variance.png" />
-    <figcaption>
-        Plot 2. Comparison of Algorithms at 65% Variance
-    </figcaption>
-    </figure>
+<img src="images/white.jpg" width = "10"/>
+<img src="images/Results_65Variance.png" width = "400"/>
 </div>
+
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 2. Comparison of Algorithms at 65% Variance_
+
+
 
 <img src="images/white.jpg" width = "10"/>
 
@@ -174,14 +181,16 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 - `SVM: 0.811067 (0.012394)`
 - `DTC: 0.742667 (0.014010)`
 
+<img src="images/white.jpg" width = "20"/>
+
 <div>
-    <figure width="45%" text-align= "center">
-    <img src="images/Results_80%Variance.png" />
-    <figcaption>
-        Plot 3. Comparison of Algorithms at 80% Variance
-    </figcaption>
-    </figure>
+<img src="images/white.jpg" width = "10"/>
+<img src="images/Results_80Variance.png" width = "400"/>
 </div>
+
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 3. Comparison of Algorithms at 80% Variance_
+
+
 
 <img src="images/white.jpg" width = "10"/>
 
@@ -192,14 +201,16 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 - `SVM: 0.821333 (0.014919)`
 - `DTC: 0.743467 (0.019670)`
 
+<img src="images/white.jpg" width = "20"/>
+
 <div>
-    <figure width="45%" text-align= "center">
-    <img src="images/Results_95%Variance.png" />
-    <figcaption>
-        <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> Plot 4. Comparison of Algorithms at 95% Variance
-    </figcaption>
-    </figure>
+<img src="images/white.jpg" width = "10"/>
+<img src="images/Results_95Variance.png" width = "400"/>
 </div>
+
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 4. Comparison of Algorithms at 95% Variance_
+
+
 
 <img src="images/white.jpg" width = "10"/>
 
