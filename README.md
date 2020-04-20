@@ -55,10 +55,10 @@ A convolutional neural network (CNN) is one of the most commonly used algorithms
 One of the initial observations of the data was that the number of positive samples was significantly lower than the number of negative samples.
 
 <!-- ![Graph 1. Ratio of Negative to Positive Samples](images/Graph_RatioP2N_CNN.png) -->
-<div style="display:inline-block; padding-left:27.5%; padding-bottom:3%">
-    <figure width="45%" text-align= "center">
+<div>
+    <figure>
         <img src="images/Graph_RatioP2N_CNN.png" />
-        <figcaption style = "padding-left:15%">
+        <figcaption>
             Graph 1. Ratio of Negative to Positive Samples
             </figcaption>
     </figure>
