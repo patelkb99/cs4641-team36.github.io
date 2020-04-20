@@ -35,21 +35,7 @@ We processed the data, and based on their class (0 for non-cancerous and 1 for c
 
 ## **Convolutional Neural Network**
 
-### Approach (How we started)
-### (reasoning behind approach)
-
-### How we improved our approach
-
-### Visualization of the cnn filters
-
-### Visualization of intermediate layers
-
-### Visualization of network architecture
-
-### Confusion matrix
-
-### Results
-
+### Approach
 A convolutional neural network (CNN) is one of the most commonly used algorithms for image classification tasks. Using a CNN, we were able to achieve a recall of x percent and an accuracy of y percent. Before training our CNN on our data, there were several preprocessing steps that needed to occur.
 
 One of the initial observations of the data was that the number of positive samples was significantly lower than the number of negative samples.
@@ -66,6 +52,8 @@ One of the initial observations of the data was that the number of positive samp
 
 
 <img src="images/white.jpg" width = "10"/>
+
+### How we improved our approach
 
 The imbalanced class distributions will lead to our model generalizing poorly. This problem is exacerbated if we have unrepresentative test/train splits. In order to combat both the unbalanced class problem and increase the generalizability of our model, stratified k fold validation was used over 80% of the data. The other 20% is saved for testing. By using stratified k-fold validation, we ensure that each validation fold has an even proportion of positive and negative samples.
 
@@ -136,9 +124,26 @@ From these charts, we can see that the validation loss is at a minimum at the x 
 --heat map
 
 # Supervised Learning Models
-### [linear regression, k-nearest neighbors, support vector machine, and neural network]
+###### Linear Regression, k-Nearest Neighbors, Support Vector Machine, and Neural Network
+
+In addition to the convolutional neural net, we ran other supervised learning models such as linear regression, k-nearest neighbors, support vector machine, and neural network. We utilized sklearn’s Kfold and split the dataset into 10 training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. We ran these methods twice, first on the data set and then again on a data set that we had preprocessed with PCA.
+
 ## Data Preprocessing
-With such a large data set size, we were unable to run the dataset as is without our programs crashing. Therefore, e ran PCA on the data in order to reduce the number of variables in our dataset while maintaining as much information as possible. We were able to experiment with the results that we could obtain. In addition to the convolutional neural net, we ran other supervised learning models such as linear regression, k-nearest neighbors, support vector machine, and neural network. We utilized sklearn’s Kfold and split the dataset into 10 training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies.
+With such a large data set size, we were unable to run the dataset as is without our programs crashing. Therefore, we ran PCA on the data in order to reduce the number of variables in our dataset while maintaining as much information as possible. This data is depicted in _Plot 1. Post-PCA Scree Plot_
+
+<img src="images/white.jpg" width = "10"/>
+
+<div>
+<img src="images/white.jpg" width = "200"/>
+<img src="images/scree.png" width = "400"/>
+</div>
+
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Plot 1. Post-PCA Scree Plot_
+
+
+<img src="images/white.jpg" width = "10"/>
+
+<!-- We were able to experiment with the results that we could obtain. In addition to the convolutional neural net, we ran other supervised learning models such as linear regression, k-nearest neighbors, support vector machine, and neural network. We utilized sklearn’s Kfold and split the dataset into 10 training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. -->
 ## Results
 Across all 5 of these procedures, Support Vector Machine consistently had the highest accuracy values. However, SVM also took the longest to run compared to the other models. We plotted their results in box plots. The following represent their mean accuracies and corresponding standard deviations in parenthesis.
 <!-- ![](images/Results_50%Variance.png) -->
@@ -156,12 +161,11 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 <img src="images/Results_50Variance.png" width = "400"/>
 </div>
 
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 1. Comparison of Algorithms at 50% Variance_
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 2. Comparison of Algorithms at 50% Variance_
 
 
 <img src="images/white.jpg" width = "10"/>
 
-<img src="images/white.jpg" width = "10"/>
 
 
 ### `65% Variance`
@@ -179,7 +183,7 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 <img src="images/Results_65Variance.png" width = "400"/>
 </div>
 
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 2. Comparison of Algorithms at 65% Variance_
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 3. Comparison of Algorithms at 65% Variance_
 
 
 
@@ -199,7 +203,7 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 <img src="images/Results_80Variance.png" width = "400"/>
 </div>
 
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 3. Comparison of Algorithms at 80% Variance_
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 4. Comparison of Algorithms at 80% Variance_
 
 
 
@@ -219,7 +223,7 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 <img src="images/Results_95Variance.png" width = "400"/>
 </div>
 
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 4. Comparison of Algorithms at 95% Variance_
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 5. Comparison of Algorithms at 95% Variance_
 
 
 
