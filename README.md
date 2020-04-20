@@ -55,20 +55,26 @@ A convolutional neural network (CNN) is one of the most commonly used algorithms
 One of the initial observations of the data was that the number of positive samples was significantly lower than the number of negative samples.
 
 <!-- ![Graph 1. Ratio of Negative to Positive Samples](images/Graph_RatioP2N_CNN.png) -->
-<div style="display:inline-block; padding-left:27.5%; padding-bottom:3%">
-    <figure width="45%" text-align= "center">
-        <img src="images/Graph_RatioP2N_CNN.png" />
-        <figcaption style = "padding-left:15%">
+<img src="images/white.jpg" width = "10"/>
+<div>
+    <figure width="" text-align= "center">
+        <img src="images/Graph_RatioP2N_CNN.png" width = "400"/>
+        <figcaption padding-left:15%>
             Graph 1. Ratio of Negative to Positive Samples
-            </figcaption>
+        </figcaption>
     </figure>
 </div>
+<img src="images/white.jpg" width = "10"/>
+
+
 
 The imbalanced class distributions will lead to our model generalizing poorly. This problem is exacerbated if we have unrepresentative test/train splits. In order to combat both the unbalanced class problem and increase the generalizability of our model, stratified k fold validation was used over 80% of the data. The other 20% is saved for testing. By using stratified k-fold validation, we ensure that each validation fold has an even proportion of positive and negative samples.
 
 <!-- ![Graph 2. Ratio of Negative to Positive Samples Manifold](images/Graph_RatioP2NManifold_CNN.png) -->
 
-<div style="display:inline-block; padding-left:27.5%; padding-bottom:3%">
+<img src="images/white.jpg" width = "10"/>
+
+<div>
     <figure width="25%" text-align= "center">
     <img src="images/Graph_RatioP2NManifold_CNN.png" />
     <figcaption style = "padding-left:center">
@@ -77,20 +83,19 @@ The imbalanced class distributions will lead to our model generalizing poorly. T
     </figure>
   </div>
 
+<img src="images/white.jpg" width = "10"/>
+
 The model was also improved by changing the color space of the input image. The RGB colorspace is a non-uniform colorspace, and it does not separate color from luminanceance like HSV or LUV do. The images are normalized and converted to the LUV colorspace as a result. LUV is perceptually linear and is therefore better for detecting color differences than RGB.
 
 
 <!-- ![Image 1. Color Space Modification: HSV](images/ColorSpace_HSV.png) ![Image 2. Color Space Modification: LUV](images/ColorSpace_LUV.png) -->
 
-<div style="display:inline-block; padding-left:15%; padding-bottom:3%">
-    <figure width="25%" text-align= "center">
+<div><figure width="25%" text-align= "center">
     <img src="images/ColorSpace_HSV.png" />
     <figcaption padding-left: "15%" text-align: "center">
     Image 1. Color Space Modification: HSV
     </figcaption>
-    </figure>
-  </div>
-  <div style="display:inline; float:right; padding-right:15%">
+    </figure></div><div>
     <figure width="25%" text-align: "center">
     <img src="images/ColorSpace_LUV.png" />
     <figcaption>
@@ -98,6 +103,8 @@ The model was also improved by changing the color space of the input image. The 
     </figcaption>
     </figure>
   </div>
+
+<img src="images/white.jpg" width = "20"/>
 
   After the data wrangling and preprocessing, the images were fed into a CNN with 7 convolution layers, 3 max pooling layers, a hidden dense layer, and an output layer. We also incorporated dropout layers into our model to help prevent overfitting the data.
 
@@ -126,69 +133,78 @@ With such a large data set size, we were unable to run the dataset as is without
 ## Results
 Across all 5 of these procedures, Support Vector Machine consistently had the highest accuracy values. However, SVM also took the longest to run compared to the other models. We plotted their results in box plots. The following represent their mean accuracies and corresponding standard deviations in parenthesis.
 <!-- ![](images/Results_50%Variance.png) -->
-`50% Variance`
+### `50% Variance`
 - `LR: 0.760267 (0.013673)`
 - `RF: 0.836800 (0.011673)`
 - `KNN: 0.793333 (0.014883)`
 - `SVM: 0.842533 (0.008315)`
 - `DTC: 0.742400 (0.012744)`
 
-<div style="display:inline-block; padding-left:27.5%; padding-bottom:3%; padding-top:3%">
+<div>
     <figure width="45%" text-align= "center">
     <img src="images/Results_50%Variance.png" />
-    <figcaption style = "text-align:center; padding-top:2%; padding-left:10%">
+    <figcaption>
         Plot 1. Comparison of Algorithms at 50% Variance
     </figcaption>
     </figure>
 </div>
 
-`65% Variance`
+<img src="images/white.jpg" width = "10"/>
+
+
+### `65% Variance`
 - `LR: 0.763333 (0.009693)`
 - `RF: 0.832933 (0.011172)`
 - `KNN: 0.807467 (0.008686)`
 - `SVM: 0.839600 (0.008925)`
 - `DTC: 0.748800 (0.012368)`
 
-<div style="display:inline-block; padding-left:27.5%; padding-bottom:3%; padding-top:3%">
+<div>
     <figure width="45%" text-align= "center">
     <img src="images/Results_65%Variance.png" />
-    <figcaption style = "text-align:center; padding-top:2%; padding-left:10%">
+    <figcaption>
         Plot 2. Comparison of Algorithms at 65% Variance
     </figcaption>
     </figure>
 </div>
 
-`80% Variance`
+<img src="images/white.jpg" width = "10"/>
+
+### `80% Variance`
 - `LR: 0.739867 (0.016912)`
 -` RF: 0.809200 (0.011492)`
 - `KNN: 0.806133 (0.013012)`
 - `SVM: 0.811067 (0.012394)`
 - `DTC: 0.742667 (0.014010)`
 
-<div style="display:inline-block; padding-left:27.5%; padding-bottom:3%; padding-top:3%">
+<div>
     <figure width="45%" text-align= "center">
     <img src="images/Results_80%Variance.png" />
-    <figcaption style = "text-align:center; padding-top:2%; padding-left:10%">
+    <figcaption>
         Plot 3. Comparison of Algorithms at 80% Variance
     </figcaption>
     </figure>
 </div>
 
-`95% Variance`
+<img src="images/white.jpg" width = "10"/>
+
+### `95% Variance`
 - `LR: 0.740933 (0.011140)`
 - `RF: 0.815467 (0.021302)`
 - `KNN: 0.814267 (0.014884)`
 - `SVM: 0.821333 (0.014919)`
 - `DTC: 0.743467 (0.019670)`
 
-<div style="display:inline-block; padding-left:27.5%; padding-bottom:3%; padding-top:3%">
+<div>
     <figure width="45%" text-align= "center">
     <img src="images/Results_95%Variance.png" />
-    <figcaption style = "text-align:center; padding-top:2%; padding-left:10%">
-        Plot 4. Comparison of Algorithms at 95% Variance
+    <figcaption>
+        <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> Plot 4. Comparison of Algorithms at 95% Variance
     </figcaption>
     </figure>
 </div>
+
+<img src="images/white.jpg" width = "10"/>
 
 # Conclusion
 
