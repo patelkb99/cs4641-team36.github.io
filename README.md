@@ -60,7 +60,7 @@ One of the initial observations of the data was that the number of positive samp
     <figure width="" text-align= "center">
         <img src="images/Graph_RatioP2N_CNN.png" width = "400"/>
         <figcaption padding-left:15%>
-            Graph 1. Ratio of Negative to Positive Samples
+            <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/>Graph 1. Ratio of Negative to Positive Samples
         </figcaption>
     </figure>
 </div>
