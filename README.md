@@ -57,16 +57,15 @@ One of the initial observations of the data was that the number of positive samp
 <!-- ![Graph 1. Ratio of Negative to Positive Samples](images/Graph_RatioP2N_CNN.png) -->
 <img src="images/white.jpg" width = "10"/>
 <div>
-    <figure width="" text-align= "center">
-        <img src="images/Graph_RatioP2N_CNN.png" width = "400"/>
-        <figcaption padding-left:15%>
-            <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/>Graph 1. Ratio of Negative to Positive Samples
-        </figcaption>
-    </figure>
+<img src="images/white.jpg" width = "200"/>
+<img src="images/Graph_RatioP2N_CNN.png" width = "400"/>
 </div>
+
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Graph 1. Ratio of Negative to Positive Samples_
+
+
+
 <img src="images/white.jpg" width = "10"/>
-
-
 
 The imbalanced class distributions will lead to our model generalizing poorly. This problem is exacerbated if we have unrepresentative test/train splits. In order to combat both the unbalanced class problem and increase the generalizability of our model, stratified k fold validation was used over 80% of the data. The other 20% is saved for testing. By using stratified k-fold validation, we ensure that each validation fold has an even proportion of positive and negative samples.
 
@@ -75,13 +74,12 @@ The imbalanced class distributions will lead to our model generalizing poorly. T
 <img src="images/white.jpg" width = "10"/>
 
 <div>
-    <figure width="25%" text-align= "center">
-    <img src="images/Graph_RatioP2NManifold_CNN.png" />
-    <figcaption style = "padding-left:center">
-    Graph 2. Ratio of Negative to Positive Samples with 5 Folds
-    </figcaption>
-    </figure>
-  </div>
+<img src="images/white.jpg" width = "200"/>
+<img src="images/Graph_RatioP2NManifold_CNN.png" width = "400"/>
+</div>
+
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Graph 2. Ratio of Negative to Positive Samples Five Folds_
+
 
 <img src="images/white.jpg" width = "10"/>
 
@@ -89,20 +87,19 @@ The model was also improved by changing the color space of the input image. The 
 
 
 <!-- ![Image 1. Color Space Modification: HSV](images/ColorSpace_HSV.png) ![Image 2. Color Space Modification: LUV](images/ColorSpace_LUV.png) -->
+<div>
+<img src="images/white.jpg" width = "100"/>
+<img src="images/ColorSpace_HSV.png" />
+<img src="images/white.jpg" width = "100"/>
+<img src="images/ColorSpace_LUV.png" />
+</div>
 
-<div><figure width="25%" text-align= "center">
-    <img src="images/ColorSpace_HSV.png" />
-    <figcaption padding-left: "15%" text-align: "center">
-    Image 1. Color Space Modification: HSV
-    </figcaption>
-    </figure></div><div>
-    <figure width="25%" text-align: "center">
-    <img src="images/ColorSpace_LUV.png" />
-    <figcaption>
-    Image 2. Color Space Modification: LUV
-    </figcaption>
-    </figure>
-  </div>
+
+<img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/>_Image 1. Color Space Modification: HSV_
+<img src="images/white.jpg" width = "20"/>
+<img src="images/white.jpg" width = "20"/>
+_Image 2. Color Space Modification: LUV_
+
 
 <img src="images/white.jpg" width = "20"/>
 
