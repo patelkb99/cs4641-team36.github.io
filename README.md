@@ -57,12 +57,12 @@ One of the initial observations of the data was that the number of positive samp
 <!-- ![Graph 1. Ratio of Negative to Positive Samples](images/Graph_RatioP2N_CNN.png) -->
 <div style="display:inline-block; padding-left:27.5%; padding-bottom:3%">
     <figure width="45%" text-align= "center">
-    <img src="images/Graph_RatioP2N_CNN.png" />
-    <figcaption style = "padding-left:15%">
-        Graph 1. Ratio of Negative to Positive Samples
-    </figcaption>
+        <img src="images/Graph_RatioP2N_CNN.png" />
+        <figcaption style = "padding-left:15%">
+            Graph 1. Ratio of Negative to Positive Samples
+            </figcaption>
     </figure>
-  </div>
+</div>
 
 The imbalanced class distributions will lead to our model generalizing poorly. This problem is exacerbated if we have unrepresentative test/train splits. In order to combat both the unbalanced class problem and increase the generalizability of our model, stratified k fold validation was used over 80% of the data. The other 20% is saved for testing. By using stratified k-fold validation, we ensure that each validation fold has an even proportion of positive and negative samples.
 
