@@ -126,7 +126,7 @@ From these charts, we can see that the validation loss is at a minimum at the x 
 <img src="images/white.jpg" width = "10"/>
 
 
-<img src="images/CNNLayers.png"/>
+<img src="images/CNNlayers.png"/>
 
 
 <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Graphic 1. Visualization of Graphics Layers_
