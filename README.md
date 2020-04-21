@@ -132,7 +132,7 @@ From these charts, we can see that both the validation loss and validation accur
 # Supervised Learning Models
 ###### Linear Regression, k-Nearest Neighbors, Support Vector Machine, and Neural Network
 
-In addition to the convolutional neural net, we ran other supervised learning models: Linear Regression (LR), K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Neural Network (NN), and Decision Tree Classifier (DCT). We utilized sklearn’s Kfold and split the dataset into ten training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. We ran these methods twice: first on the data set without preprocessing and then once again on a data set that we had preprocessed with PCA.
+In addition to the convolutional neural net, we ran other supervised learning models: Logistic Regression (LR), K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Random Forest (RF), and Decision Tree Classifier (DTC). We utilized sklearn’s Kfold and split the dataset into ten training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. We ran these methods twice: first on the data set without preprocessing and then once again on a data set that we had preprocessed with PCA.
 
 ## Data Preprocessing
 With such a large data set size, we wanted to observe what would happen to our results and processing time if we ran PCA on the data. By using PCA, we would be able to reduce the number of features in our dataset while maintaining as much information as possible. We used a 95% variance. This data can be visualized in the scree plot below.
@@ -153,9 +153,9 @@ With such a large data set size, we wanted to observe what would happen to our r
 
 ## Results
 
-In the dataset without PCA, on average, K-nearest neighbors, Random Forest, and Support Vector Machine had relatively similar average accuracies across the 10 folds. However, SVM had the highest average accuracy with the best accuracy being above 85%.
+In the dataset without PCA, on average, KNN, RF, and SVM had relatively similar average accuracies across the 10 folds. However, SVM had the highest average accuracy with the best accuracy being above 85%.
 
-In the dataset with PCA, SVM also had the highest average accuracy, with K-nearest neighbors as the second best by about 3%. When running these tests, SVM also took the longest to run compared to the other models
+In the dataset with PCA, SVM also had the highest average accuracy, with KNN as the second best by approximately 4%. However, SVM took longer than any other method to complete.
 
 The results for our supervised learning models both with and without PCA follow.
 
