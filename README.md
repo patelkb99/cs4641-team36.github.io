@@ -161,7 +161,7 @@ Initially, we expected methods which ran on the dataset with PCA to have a highe
 
 # Conclusion
 
-![](images/IsToDo.png)
+With more improvements to this model, we could save critical time for pathologists and medical providers and help reduce the likelihood of incorrect diagnoses. We could then consider expanding our model to detect different stages of IDC and other forms of breast cancer. Although we tried numerous different models in our approach to detecting IDC, we were correct in our assumption that the convolutional neural net would give us the best results compared to other supervised learning methods. Since we likely fed our model a sufficient amount of data and added several dropout layers to the CNN, it would likely generalize well to real world applications. However, one downside to our approach was that data we trained our CNN on used a much larger proportion of negative test cases than positive ones, so for future work, we could implement a random oversampling of positive test cases. Another limitation we dealt with was our computers and amount of time it took to train our models after tuning the hyperparameters. Despite this, we still consider our project a major success in regards to what we have accomplished and learned throughout the semester and the accuracy we have achieved in detecting IDC.
 
 # Contributions
 - Krishna Patel - Supervised Learning Methods, Github pages setup
@@ -180,42 +180,3 @@ Initially, we expected methods which ran on the dataset with PCA to have a highe
 [4] “U.S. Breast Cancer Statistics.” Breastcancer.org, 27 Jan. 2020, www.breastcancer.org/symptoms/understand_bc/statistics.
 
 [5] “Use Case 6: Invasive Ductal Carcinoma (IDC) Segmentation.” Andrew Janowczyk, 5 Jan. 2018, www.andrewjanowczyk.com/use-case-6-invasive-ductal-carcinoma-idc-segmentation/.
-
-
-<!-- ## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/patelkb99/4641-team31.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/patelkb99/4641-team31.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out. -->
