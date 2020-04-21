@@ -46,9 +46,9 @@ We processed and split our dataset based on their class (0 for no IDC present an
 ## **Convolutional Neural Network**
 
 ### Approach
-We chose to use a Convolutional Neural Network (CNN) for detecting IDC because of its ability to perform feature extraction and classification. In addition, CNNs are currently one of the most popular models in the field of computer vision due to their ability to classify images with notably higher accuracy than other machine learning models. Using a CNN, we were able to achieve a recall of 70.3 percent and an accuracy of 87.51 percent.  
+We chose to use a Convolutional Neural Network (CNN) for detecting IDC because of its ability to perform feature extraction and classification. In addition, CNNs are currently one of the most popular models in the field of computer vision due to their ability to classify images with notably higher accuracy than other machine learning models. Using a CNN, we were able to achieve a recall of 70.3 percent and an accuracy of 87.51 percent.
 
-Before we could train our network, some data preprocessing tasks had to occur. 
+Before we could train our network, some data preprocessing tasks had to occur.
 
 One of the initial observations of the data was that the number of positive samples was much lower than the number of negative samples, as shown in Graph 1. The imbalanced class distributions will lead to our model generalizing poorly. This problem is exacerbated if we have unrepresentative test/train splits. In order to combat the unbalanced class problem and increase the generalizability of our model, we used stratified k-fold validation over 80% of the data. The other 20% was saved for testing. By using stratified k-fold validation, we ensured that each validation fold had an even proportion of positive and negative samples.
 
@@ -91,16 +91,16 @@ The resulting learning curve shows the average loss and accuracy of the five val
   <em>Graph 4. Loss Curve Across Five Validation Folds</em>
 </p>
 
-From these charts, we can see that both the validation loss and validation accuracy peak at the 16th epoch. The model is then trained on the full 80% training split over 16 epochs. 
+From these charts, we can see that both the validation loss and validation accuracy peak at the 16th epoch. The model is then trained on the full 80% training split over 16 epochs.
 
 ### Improving The Results
 
 There are several things that could be implemented that might result in an increase in recall or accuracy. First, is randomly oversampling the positive samples. Since the model prioritizes recall over accuracy, it is more important that a positive sample is labeled as positive than that the model predicts both classes equally. With more positive image samples in each of the validation folds, it is more likely a positive image is label correctly.
 
-The CNN architecture could also improve. With more time and experimentation, we potentially could have performed more experimentation with the layers of our model. Additionally, if there were more available computational resources, more hyperparameter tuning could occur. As previously mentioned, the validation recall continually increased with the training recall. The key issue is balancing the recall precision tradeoff. 
+The CNN architecture could also improve. With more time and experimentation, we potentially could have performed more experimentation with the layers of our model. Additionally, if there were more available computational resources, more hyperparameter tuning could occur. As previously mentioned, the validation recall continually increased with the training recall. The key issue is balancing the recall precision tradeoff.
 
 ## Supervised Learning Models
-### Linear Regression, k-Nearest Neighbors, Support Vector Machine, and Neural Network
+### Linear Regression, k-Nearest Neighbors, Support Vector Machine, Random Forest, and Decision Tree Classifier
 
 In addition to the convolutional neural net, we ran other supervised learning models: Logistic Regression (LR), K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Random Forest (RF), and Decision Tree Classifier (DTC). We utilized sklearn’s Kfold and split the dataset into ten training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. We ran these methods twice: first on the dataset without preprocessing and then once again on a dataset that we had preprocessed with PCA.
 
@@ -119,7 +119,7 @@ In the dataset without PCA, on average, KNN, RF, and SVM had relatively similar 
 
 In the dataset with PCA, SVM also had the highest average accuracy, with KNN as the second best by approximately 4%. Once again, SVM took longer than any other method to complete.
 
-The average accuracies and their standard deviations for our supervised learning models both with and without PCA follow: 
+The average accuracies and their standard deviations for our supervised learning models both with and without PCA follow:
 
 #### `No PCA`
 - `RF: 0.831286 (0.011019)`
@@ -131,7 +131,7 @@ The average accuracies and their standard deviations for our supervised learning
 <p align="center">
   <img src="images/no-pca2.png" width ="400"/>
   <br>
-  <em>Graph 6. Comparison of 5 Methods without PCA</em>
+  <em>Graph 6. Comparison of Five Methods without PCA</em>
 </p>
 
 #### `PCA with 95% Variance`
@@ -144,7 +144,7 @@ The average accuracies and their standard deviations for our supervised learning
 <p align="center">
   <img src="images/with-pca2.png" width ="400"/>
   <br>
-  <em>Graph 7. Comparison of 5 Methods with PCA</em>
+  <em>Graph 7. Comparison of Five Methods with PCA</em>
 </p>
 
 ### Discussion
