@@ -87,7 +87,7 @@ The resulting learning curve shows the average loss and accuracy of the five val
   <img src="images/losscurve.png"/>
   <br>
   <em>Graph 3. Accuracy Curve Across Five Validation Folds</em>
-  <img src="images/white.jpg" width = "60" height="10"/>
+  <img src="images/white.jpg" width = "30" height="10"/>
   <em>Graph 4. Loss Curve Across Five Validation Folds</em>
 </p>
 
