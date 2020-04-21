@@ -86,9 +86,9 @@ The resulting learning curve shows the average loss and accuracy of the five val
   <img src="images/white.jpg" width = "30" height="10"/>
   <img src="images/losscurve.png"/>
   <br>
-  <em>Graph 3. Accuracy Curve Across Five Validation Folds</em>
+  <em>Graph 3. Accuracy Curve Across 5 Validation Folds</em>
   <img src="images/white.jpg" width = "30" height="10"/>
-  <em>Graph 4. Loss Curve Across Five Validation Folds</em>
+  <em>Graph 4. Loss Curve Across 5 Validation Folds</em>
 </p>
 
 From these charts, we can see that both the validation loss and validation accuracy peak at the 16th epoch. The model is then trained on the full 80% training split over 16 epochs.
