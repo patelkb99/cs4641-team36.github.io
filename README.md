@@ -128,19 +128,11 @@ In addition to the convolutional neural net, we ran other supervised learning mo
 ## Data Preprocessing
 With such a large data set size, we wanted to observe what would happen to our results and processing time if we ran PCA on the data. By using PCA, we would be able to reduce the number of features in our dataset while maintaining as much information as possible. We used a 95% variance. This data can be visualized in the scree plot below.
 
-<img src="images/white.jpg" width = "10"/>
-
-<div>
-<img src="images/white.jpg" width = "200"/>
-<img src="images/scree.png" width = "400"/>
-</div>
-
-<img src="images/white.jpg" width = "1"/>
-
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Graph 5. Cumulative Explained Variance vs. Number of Components_
-
-
-<img src="images/white.jpg" width = "10"/>
+<p align="center">
+  <img src="images/scree.png" width ="400"/>
+  <br>
+  <em>Graph 5. Cumulative Explained Variance vs. Number of Components</em>
+</p>
 
 ## Results
 
