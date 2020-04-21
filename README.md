@@ -98,7 +98,7 @@ From these charts, we can see that both the validation loss and validation accur
 There are several things that could be implemented that might result in an increase in recall or accuracy. First, we could randomly oversample the positive samples. Since the model prioritizes recall over accuracy, it is more important that a positive sample is labeled as positive than that the model predicts both classes equally. With more positive image samples in each of the validation folds, it is more likely a positive image is label correctly.
 
 <p align="center">
-  <img src="images/confusion-matrix.png" width="300"/>
+  <img src="images/confusion-matrix.png" width="400"/>
   <br>
   <em>Graph 5. Confusion Matrix</em>
 </p>
