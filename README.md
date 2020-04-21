@@ -60,7 +60,6 @@ One of the initial observations of the data was that the number of positive samp
 
 The model was also improved by changing the color space of the input image. The RGB colorspace is a non-uniform colorspace, and it does not separate color from luminance like HSV or LUV do. The images are normalized and converted to the LUV colorspace as a result. LUV is perceptually linear and is therefore better for detecting color differences than RGB.
 
-<br>
 <p align="center">
   <img class="cen" src="images/ColorSpace_HSV.png" />
   <br>
@@ -72,37 +71,27 @@ The model was also improved by changing the color space of the input image. The 
   <em>Image 3. Color Space Modification: LUV</em>
 </p>
 
-<br>
-
 ### The CNN Architecture
 After the data wrangling and preprocessing, the images were fed into a CNN with seven convolution layers, three max pooling layers, a hidden dense layer, and an output layer. We also incorporated dropout layers into our model to help prevent overfitting the data.
 
-<br>
-
-<img src="images/CNNlayers.png"/>
-
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Image 4. Visualization of Graphics Layers_
-
-<img src="images/white.jpg" width = "10"/>
+<p align="center">
+  <img class="cen" src="images/CNNlayers.png" />
+  <br>
+  <em>Image 4. Visualization of Graphics Layers</em>
+</p>
 
 The resulting learning curve shows the average loss and accuracy of the five validation folds plotted against the training data over 30 epochs. The recall chart was omitted because both the training and validation recall followed a strong logarithmic curve.
 
-<img src="images/white.jpg" width = "10"/>
-
-<div>
-<img src="images/white.jpg" width = "0"/>
-<img src="images/acc_curve.png" />
-<img src="images/white.jpg" width = "20"/>
-<img src="images/losscurve.png" />
-</div>
-
-
-<img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/>_Graph 3. Accuracy Curve Across Five Validation Folds_
-<img src="images/white.jpg" width = "30"/>
-<img src="images/white.jpg" width = "30"/>
-_Graph 4. Loss Curve Across Five Validation Folds_
-
-<img src="images/white.jpg" width = "40"/>
+<p align="center">
+  <img class="cen" src="images/acc_curve.png" />
+  <br>
+  <em>Graph 3. Accuracy Curve Across Five Validation Folds</em>
+</p>
+<p align="center">
+  <img class="cen" src="images/losscurve.png" />
+  <br>
+  <em>Graph 4. Loss Curve Across Five Validation Folds</em>
+</p>
 
 From these charts, we can see that both the validation loss and validation accuracy peak at the 16th epoch. The model is then trained on the full 80% training split over 16 epochs. 
 
