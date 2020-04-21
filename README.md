@@ -189,17 +189,10 @@ In the dataset without PCA, on average, K-nearest neighbors, Random Forest, and 
 
 <img src="images/white.jpg" width = "20"/>
 
-<div>
 <img src="images/white.jpg" width = "10"/>
-<img src="images/Results_65Variance.png" width = "400"/>
-</div>
 
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 3. Comparison of Algorithms at 65% Variance_
-
-
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 5. Comparison of Algorithms at 95% Variance_
-
-<img src="images/white.jpg" width = "10"/>
+## Discussion
+From these results, we expected methods run on the dataset with PCA to have a higher accuracy level because it would be a more specific dataset with lesser noise. However, as shown in our results, the methods run on the dataset without PCA had better accuracies in general, and there are many reasons as to why something like this might occur. One reason might be that PCA does not take into consideration the prediction target. This would in fact decrease accuracy because while PCA is reducing noise in the data set, it might also remove regions critical to determining the actual prediction target. Also, since PCA is linear, it might hurt its accuracy when applied to images as vectors instead of reducing them to 2 images, rotation, and scale.
 
 # Conclusion
 
