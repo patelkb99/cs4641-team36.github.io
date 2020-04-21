@@ -36,7 +36,7 @@ We processed the data, and based on their class (0 for non-cancerous and 1 for c
 ## **Convolutional Neural Network**
 
 ### Approach
-We chose to use a convolutional neural network (CNN) for detecting IDC because of its ability to identify the defining spatial properties of images and because of its pervasiveness throughout fields involving image classification such as computer vision.  Using a CNN, we were able to achieve a recall of x percent and an accuracy of y percent. We needed to preprocess our data in order to train our data on CNN before training our data.
+We chose to use a Convolutional Neural Network (CNN) for detecting IDC because of its ability to identify the defining spatial properties of images and because of its pervasiveness throughout fields involving image classification such as computer vision.  Using a CNN, we were able to achieve a recall of x percent and an accuracy of y percent. We needed to preprocess our data in order to train our data on CNN before training our data.
 
 One of the initial observations of the data was that the number of positive samples was much lower than the number of negative samples.
 
