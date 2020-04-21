@@ -95,15 +95,18 @@ From these charts, we can see that both the validation loss and validation accur
 
 ### Improving The Results
 
-There are several things that could be implemented that might result in an increase in recall or accuracy. First, is randomly oversampling the positive samples. Since the model prioritizes recall over accuracy, it is more important that a positive sample is labeled as positive than that the model predicts both classes equally. With more positive image samples in each of the validation folds, it is more likely a positive image is label correctly.
-
-The CNN architecture could also improve. With more time and experimentation, we potentially could have performed more experimentation with the layers of our model. Additionally, if there were more available computational resources, more hyperparameter tuning could occur. As previously mentioned, the validation recall continually increased with the training recall. The key issue is balancing the recall precision tradeoff.
+There are several things that could be implemented that might result in an increase in recall or accuracy. First, we could randomly oversample the positive samples. Since the model prioritizes recall over accuracy, it is more important that a positive sample is labeled as positive than that the model predicts both classes equally. With more positive image samples in each of the validation folds, it is more likely a positive image is label correctly.
 
 <p align="center">
-  <img src="images/confusion-matrix.png" width="500"/>
+  <img src="images/confusion-matrix.png" width="100"/>
   <br>
   <em>Graph 5. Confusion Matrix</em>
 </p>
+
+From the graph, we can see that our model had an easier time detecting the negative test cases with an accuracy rate of 92% and a type 1 error rate of 8%. Our model was able to detect positive test cases with only 73% accuracy and a type 2 error rate of 27%.
+
+The CNN architecture could also improve. With more time and experimentation, we potentially could have performed more experimentation with the layers of our model. Additionally, if there were more available computational resources, more hyperparameter tuning could occur. As previously mentioned, the validation recall continually increased with the training recall. The key issue is balancing the recall precision tradeoff.
+
 
 ## Supervised Learning Models
 ### Linear Regression, k-Nearest Neighbors, Support Vector Machine, Random Forest, and Decision Tree Classifier
