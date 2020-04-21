@@ -24,7 +24,7 @@ Images in this dataset are of size 50x50x3. Each file name follows this format, 
 <p align="center">
   <img src="images/dataSetExample.png"/>
   <br>
-  <em>Image 1. Example of Images in Data Set</em>
+  <em>Image 1. Example of Images in Dataset</em>
 </p>
 
 ## **Data Preprocessing**
@@ -60,9 +60,23 @@ One of the initial observations of the data was that the number of positive samp
 
 The model was also improved by changing the color space of the input image. The RGB colorspace is a non-uniform colorspace, and it does not separate color from luminance like HSV or LUV do. The images are normalized and converted to the LUV colorspace as a result. LUV is perceptually linear and is therefore better for detecting color differences than RGB.
 
-<!-- ![Image 1. Color Space Modification: HSV](images/ColorSpace_HSV.png) ![Image 2. Color Space Modification: LUV](images/ColorSpace_LUV.png) -->
+<div vertical-align="center>
+  <p align="center">
+    <img src="images/ColorSpace_HSV.png"/>
+    <br>
+    <em>_Image 2. Color Space Modification: HSV_</em>
+  </p>
+  <p align="center">
+    <img src="images/ColorSpace_LUV.png"/>
+    <br>
+    <em>Image 3. Color Space Modification: LUV</em>
+  </p>
+</div>
 
-<img src="images/white.jpg" width = "10"/>
+<!-- ![Image 1. Color Space Modification: HSV](images/ColorSpace_HSV.png) 
+![Image 2. Color Space Modification: LUV](images/ColorSpace_LUV.png) -->
+
+<!-- <img src="images/white.jpg" width = "10"/>
 
 <div>
 <img src="images/white.jpg" width = "110"/>
@@ -79,7 +93,7 @@ The model was also improved by changing the color space of the input image. The 
 _Image 3. Color Space Modification: LUV_
 
 
-<img src="images/white.jpg" width = "20"/>
+<img src="images/white.jpg" width = "20"/> -->
 
 ### The CNN Architecture
 After the data wrangling and preprocessing, the images were fed into a CNN with seven convolution layers, three max pooling layers, a hidden dense layer, and an output layer. We also incorporated dropout layers into our model to help prevent overfitting the data.
@@ -120,13 +134,13 @@ There are several things that could be implemented that might result in an incre
 
 The CNN architecture could also improve. With more time and experimentation, we potentially could have performed more experimentation with the layers of our model. Additionally, if there were more available computational resources, more hyperparameter tuning could occur. As previously mentioned, the validation recall continually increased with the training recall. The key issue is balancing the recall precision tradeoff. 
 
-# Supervised Learning Models
-###### Linear Regression, k-Nearest Neighbors, Support Vector Machine, and Neural Network
+## Supervised Learning Models
+### Linear Regression, k-Nearest Neighbors, Support Vector Machine, and Neural Network
 
-In addition to the convolutional neural net, we ran other supervised learning models: Logistic Regression (LR), K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Random Forest (RF), and Decision Tree Classifier (DTC). We utilized sklearn’s Kfold and split the dataset into ten training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. We ran these methods twice: first on the data set without preprocessing and then once again on a data set that we had preprocessed with PCA.
+In addition to the convolutional neural net, we ran other supervised learning models: Logistic Regression (LR), K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Random Forest (RF), and Decision Tree Classifier (DTC). We utilized sklearn’s Kfold and split the dataset into ten training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. We ran these methods twice: first on the dataset without preprocessing and then once again on a dataset that we had preprocessed with PCA.
 
-## Data Preprocessing
-With such a large data set size, we wanted to observe what would happen to our results and processing time if we ran PCA on the data. By using PCA, we would be able to reduce the number of features in our dataset while maintaining as much information as possible. We used a 95% variance. This data can be visualized in the scree plot below.
+### Data Preprocessing
+First, we split the dataset into a training and testing set with an 80-20 split respectively. With such a large dataset size, we wanted to observe what would happen to our results and processing time if we ran PCA on the data. By using PCA, we would be able to reduce the number of features in our dataset while maintaining as much information as possible. We used a 95% variance. This data can be visualized in the scree plot below.
 
 <p align="center">
   <img src="images/scree.png" width ="400"/>
@@ -134,15 +148,15 @@ With such a large data set size, we wanted to observe what would happen to our r
   <em>Graph 5. Cumulative Explained Variance vs. Number of Components</em>
 </p>
 
-## Results
+### Results
 
-In the dataset without PCA, on average, KNN, RF, and SVM had relatively similar average accuracies across the 10 folds. However, SVM had the highest average accuracy with the best accuracy being above 85%.
+In the dataset without PCA, on average, KNN, RF, and SVM had relatively similar average accuracies across the 10 folds. However, SVM had the highest average accuracy with the best accuracy being above 85%, but this test also took the longest to process.
 
-In the dataset with PCA, SVM also had the highest average accuracy, with KNN as the second best by approximately 4%. However, SVM took longer than any other method to complete.
+In the dataset with PCA, SVM also had the highest average accuracy, with KNN as the second best by approximately 4%. Once again, SVM took longer than any other method to complete.
 
 The average accuracies and their standard deviations for our supervised learning models both with and without PCA follow: 
 
-### `No PCA`
+#### `No PCA`
 - `RF: 0.831286 (0.011019)`
 - `KNN: 0.802857 (0.011429)`
 - `SVM: 0.838286 (0.014802)`
@@ -155,7 +169,7 @@ The average accuracies and their standard deviations for our supervised learning
   <em>Graph 6. Comparison of 5 Methods without PCA</em>
 </p>
 
-### `PCA with 95% Variance`
+#### `PCA with 95% Variance`
 - `RF: 0.779857 (0.013408)`
 - `KNN: 0.802286 (0.014529)`
 - `SVM: 0.839571 (0.014358)`
@@ -168,8 +182,8 @@ The average accuracies and their standard deviations for our supervised learning
   <em>Graph 7. Comparison of 5 Methods with PCA</em>
 </p>
 
-## Discussion
-Initially, we expected methods which ran on the dataset with PCA to have a higher accuracy level because such a dataset would necessarily include less noise. However, as shown in our results, the methods which we ran on the dataset without PCA had better accuracies in general. One reason for this occurence may be that PCA does not take into consideration the prediction target. This would decrease accuracy because while PCA is reducing noise in the data set, it may also remove regions critical to determining the prediction target.
+### Discussion
+Initially, we expected methods which ran on the dataset with PCA to have a higher accuracy level because such a dataset would necessarily include less noise. However, as shown in our results, the methods which we ran on the dataset without PCA had better accuracies in general. One reason for this occurence may be that PCA does not take into consideration the prediction target. This would decrease accuracy because while PCA is reducing noise in the dataset, it may also remove regions critical to determining the prediction target.
 
 # Conclusion
 
