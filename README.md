@@ -195,7 +195,7 @@ The results for our supervised learning models both with and without PCA follow.
 
 <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "15"/> _Plot 2. Comparison of 5 Methods without PCA_
 
-<img src="images/white.jpg" width = "10"/>
+<img src="images/white.jpg" width = "40"/>
 
 ### `PCA with 95% Variance`
 - `LR: 0.707207 (0.050200)`
@@ -212,6 +212,9 @@ The results for our supervised learning models both with and without PCA follow.
 </div>
 
 <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "15"/> _Plot 3. Comparison of 5 Methods with PCA_
+
+<img src="images/white.jpg" width = "40"/>
+
 
 ## Discussion
 Initially, we expected methods which ran on the dataset with PCA to have a higher accuracy level because such a dataset would necessarily include less noise. However, as shown in our results, the methods which we ran on the dataset without PCA had better accuracies in general. One reason for this occurence may be that PCA does not take into consideration the prediction target. This would decrease accuracy because while PCA is reducing noise in the data set, it may also remove regions critical to determining the prediction target. Further, PCA may lessen its accuracy when applied to images as vectors instead of reducing them to two images, rotation, and scale because PCA is linear.
