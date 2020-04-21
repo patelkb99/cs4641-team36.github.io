@@ -190,7 +190,7 @@ The results for our supervised learning models both with and without PCA follow.
 
 <div>
 <img src="images/white.jpg" width = "10"/>
-<img src="images/with-pca.png" width = "400"/>
+<img src="images/no-pca2.png" width = "400"/>
 </div>
 
 <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "15"/> _Plot 2. Comparison of 5 Methods without PCA_
@@ -208,7 +208,7 @@ The results for our supervised learning models both with and without PCA follow.
 
 <div>
 <img src="images/white.jpg" width = "10"/>
-<img src="images/no-pca.png" width = "400"/>
+<img src="images/with-pca2.png" width = "400"/>
 </div>
 
 <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "15"/> _Plot 3. Comparison of 5 Methods with PCA_
