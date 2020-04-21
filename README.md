@@ -46,7 +46,7 @@ We processed and split our dataset based on their class (0 for no IDC present an
 ## **Convolutional Neural Network**
 
 ### Approach
-We chose to use a Convolutional Neural Network (CNN) for detecting IDC because of its ability to because of its ability to perform feature extraction and classification. In addition, CNNs are currently the most widely used and most accurate model used in the field of computer vision. Using a CNN, we were able to achieve a recall of x percent and an accuracy of y percent. 
+We chose to use a Convolutional Neural Network (CNN) for detecting IDC because of its ability to perform feature extraction and classification. In addition, CNNs are currently the most widely used and most accurate model used in the field of computer vision. Using a CNN, we were able to achieve a recall of x percent and an accuracy of y percent. 
 
 Before we could train our network, some data preprocessing tasks had to occur. 
 
