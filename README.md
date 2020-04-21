@@ -61,13 +61,13 @@ One of the initial observations of the data was that the number of positive samp
 The model was also improved by changing the color space of the input image. The RGB colorspace is a non-uniform colorspace, and it does not separate color from luminance like HSV or LUV do. The images are normalized and converted to the LUV colorspace as a result. LUV is perceptually linear and is therefore better for detecting color differences than RGB.
 
 <p align="center">
-  <img class="cen" src="images/ColorSpace_HSV.png" />
+  <img src="images/ColorSpace_HSV.png" />
+  <img src="images/white.jpg" width = "50"/>
+  <img src="images/ColorSpace_LUV.png" />
   <br>
+  
   <em>Image 2. Color Space Modification: HSV</em>
-</p>
-<p align="center">
-  <img class="cen" src="images/ColorSpace_LUV.png" />
-  <br>
+  <img src="images/white.jpg" width = "50"/>
   <em>Image 3. Color Space Modification: LUV</em>
 </p>
 
