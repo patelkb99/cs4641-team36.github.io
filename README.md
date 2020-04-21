@@ -62,11 +62,11 @@ The model was also improved by changing the color space of the input image. The 
 
 <p align="center">
   <img src="images/ColorSpace_HSV.png" />
-  <img src="images/white.jpg" width = "30" height="10"/>
+  <img src="images/white.jpg" width = "50px" height="10"/>
   <img src="images/ColorSpace_LUV.png" />
   <br>
   <em>Image 2. Color Space Modification: HSV</em>
-  <img src="images/white.jpg" width = "30" height="10"/>
+  <img src="images/white.jpg" width = "25px" height="10"/>
   <em>Image 3. Color Space Modification: LUV</em>
 </p>
 
@@ -83,11 +83,11 @@ The resulting learning curve shows the average loss and accuracy of the five val
 
 <p align="center">
   <img src="images/acc_curve.png" />
-  <img src="images/white.jpg" width = "25" height="10"/>
+  <img src="images/white.jpg" width = "30" height="10"/>
   <img src="images/losscurve.png"/>
   <br>
   <em>Graph 3. Accuracy Curve Across Five Validation Folds</em>
-  <img src="images/white.jpg" width = "50" height="10"/>
+  <img src="images/white.jpg" width = "60" height="10"/>
   <em>Graph 4. Loss Curve Across Five Validation Folds</em>
 </p>
 
@@ -105,7 +105,7 @@ The CNN architecture could also improve. With more time and experimentation, we 
 In addition to the convolutional neural net, we ran other supervised learning models: Logistic Regression (LR), K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Random Forest (RF), and Decision Tree Classifier (DTC). We utilized sklearn’s Kfold and split the dataset into ten training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. We ran these methods twice: first on the dataset without preprocessing and then once again on a dataset that we had preprocessed with PCA.
 
 ### Data Preprocessing
-First, we split the dataset into a training and testing set with an 80-20 split respectively. With such a large dataset size, we wanted to observe what would happen to our results and processing time if we ran PCA on the data. By using PCA, we would be able to reduce the number of features in our dataset while maintaining as much information as possible. We used a 95% variance. This data can be visualized in the scree plot below.
+First, we split the dataset into a training and testing set with an 80-20 split respectively. With such a large dataset size, we wanted to observe what would happen to our results and processing time if we ran PCA on the data. By using PCA, we would be able to reduce the number of features in our dataset while maintaining as much information as possible. We used a 95% variance. This data can be visualized Graph 5 below. Then, we normalized the data over the features. 
 
 <p align="center">
   <img src="images/scree.png" width ="400"/>
