@@ -36,7 +36,9 @@ We processed the data, and based on their class (0 for non-cancerous and 1 for c
 ## **Convolutional Neural Network**
 
 ### Approach
-We chose to use a Convolutional Neural Network (CNN) for detecting IDC because of its ability to identify the defining spatial properties of images and because of its pervasiveness throughout fields involving image classification such as computer vision.  Using a CNN, we were able to achieve a recall of x percent and an accuracy of y percent. We needed to preprocess our data in order to train our data on CNN before training our data.
+We chose to use a Convolutional Neural Network (CNN) for detecting IDC because of its ability to because of its ability to perform feature extraction and classification. In addition, CNNs are currently the most widely used and most accurate model used in the field of computer vision. Using a CNN, we were able to achieve a recall of x percent and an accuracy of y percent. 
+
+Before we could train our network, some data preprocessing tasks had to occur. 
 
 One of the initial observations of the data was that the number of positive samples was much lower than the number of negative samples.
 
@@ -49,11 +51,7 @@ One of the initial observations of the data was that the number of positive samp
 
 <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Graph 1. Ratio of Negative to Positive Samples_
 
-
-
 <img src="images/white.jpg" width = "10"/>
-
-### How we improved our approach
 
 The imbalanced class distributions will lead to our model generalizing poorly. This problem is exacerbated if we have unrepresentative test/train splits. In order to combat the unbalanced class problem and increase the generalizability of our model, we used stratified k-fold validation over 80% of the data. The other 20% was saved for testing. By using stratified k-fold validation, we ensured that each validation fold had an even proportion of positive and negative samples.
 
@@ -72,7 +70,6 @@ The imbalanced class distributions will lead to our model generalizing poorly. T
 <img src="images/white.jpg" width = "10"/>
 
 The model was also improved by changing the color space of the input image. The RGB colorspace is a non-uniform colorspace, and it does not separate color from luminance like HSV or LUV do. The images are normalized and converted to the LUV colorspace as a result. LUV is perceptually linear and is therefore better for detecting color differences than RGB.
-
 
 <!-- ![Image 1. Color Space Modification: HSV](images/ColorSpace_HSV.png) ![Image 2. Color Space Modification: LUV](images/ColorSpace_LUV.png) -->
 
@@ -95,7 +92,8 @@ _Image 2. Color Space Modification: LUV_
 
 <img src="images/white.jpg" width = "20"/>
 
-  After the data wrangling and preprocessing, the images were fed into a CNN with seven convolution layers, three max pooling layers, a hidden dense layer, and an output layer. We also incorporated dropout layers into our model to help prevent overfitting the data.
+### The CNN Architecture
+After the data wrangling and preprocessing, the images were fed into a CNN with seven convolution layers, three max pooling layers, a hidden dense layer, and an output layer. We also incorporated dropout layers into our model to help prevent overfitting the data.
 
 <img src="images/white.jpg" width = "10"/>
 
@@ -125,9 +123,13 @@ _Plot 2. Loss Curve Across Five Validation Folds_
 
 <img src="images/white.jpg" width = "40"/>
 
+From these charts, we can see that both the validation loss and validation accuracy peak at the 16th epoch. The model is then trained on the full 80% training split over 16 epochs. 
 
+### Improving The Results
 
-From these charts, we can see that both the validation loss and validation accuracy peak at the 16th epoch. The model is then trained on the full 80% training split over 16 epochs.
+There are several things that could be implemented that might result in an increase in recall or accuracy. First, is randomly oversampling the positive samples. Since the model prioritizes recall over accuracy, it is more important that a positive sample is labeled as positive than that the model predicts both classes equally. With more positive image samples in each of the validation folds, it is more likely a positive image is label correctly.
+
+The CNN architecture could also improve. With more time and experimentation, we potentially could have performed more experimentation with the layers of our model. Additionally, if there were more available computational resources, more hyperparameter tuning could occur. As previously mentioned, the validation recall continually increased with the training recall. The key issue is balancing the recall precision tradeoff. 
 
 # Supervised Learning Models
 ###### Linear Regression, k-Nearest Neighbors, Support Vector Machine, and Neural Network
@@ -151,7 +153,7 @@ With such a large data set size, we wanted to observe what would happen to our r
 
 <img src="images/white.jpg" width = "10"/>
 
-## Results
+## ResultsArchitecture
 
 In the dataset without PCA, on average, KNN, RF, and SVM had relatively similar average accuracies across the 10 folds. However, SVM had the highest average accuracy with the best accuracy being above 85%.
 
