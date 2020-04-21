@@ -141,10 +141,10 @@ From these charts, we can see that the validation loss is at a minimum at the x 
 # Supervised Learning Models
 ###### Linear Regression, k-Nearest Neighbors, Support Vector Machine, and Neural Network
 
-In addition to the convolutional neural net, we ran other supervised learning models such as linear regression, k-nearest neighbors, support vector machine, and neural network. We utilized sklearn’s Kfold and split the dataset into 10 training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. We ran these methods twice, first on the data set and then again on a data set that we had preprocessed with PCA.
+In addition to the convolutional neural net, we ran other supervised learning models such as linear regression, k-nearest neighbors, support vector machine, and neural network. We utilized sklearn’s Kfold and split the dataset into 10 training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. We ran these methods twice: first on the data set and then on a data set that we had preprocessed with PCA.
 
 ## Data Preprocessing
-With such a large data set size, we were unable to run the dataset as is without our programs crashing. Therefore, we ran PCA on the data in order to reduce the number of variables in our dataset while maintaining as much information as possible. This data is depicted in _Plot 1. Post-PCA Scree Plot_
+With such a large data set size, we wanted to see what would happen to our results and processing time if we ran PCA on the data. By using PCA, we would be able to reduce the number of features in our dataset while maintaining as much information as possible. We used a 95% variance. This data can be visualized in the scree plot below.
 
 <img src="images/white.jpg" width = "10"/>
 
@@ -158,16 +158,15 @@ With such a large data set size, we were unable to run the dataset as is without
 
 <img src="images/white.jpg" width = "10"/>
 
-<!-- We were able to experiment with the results that we could obtain. In addition to the convolutional neural net, we ran other supervised learning models such as linear regression, k-nearest neighbors, support vector machine, and neural network. We utilized sklearn’s Kfold and split the dataset into 10 training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. -->
 ## Results
-Across all 5 of these procedures, Support Vector Machine consistently had the highest accuracy values. However, SVM also took the longest to run compared to the other models. We plotted their results in box plots. The following represent their mean accuracies and corresponding standard deviations in parenthesis.
-<!-- ![](images/Results_50%Variance.png) -->
-### `50% Variance`
-- `LR: 0.760267 (0.013673)`
-- `RF: 0.836800 (0.011673)`
-- `KNN: 0.793333 (0.014883)`
-- `SVM: 0.842533 (0.008315)`
-- `DTC: 0.742400 (0.012744)`
+In the dataset without PCA, on average, K-nearest neighbors, Random Forest, and Support Vector Machine had very similar average accuracies across the 10 folds. However, SVM had the highest spread of accuracies with the best accuray being above 80%. the dataset with PCA had the highest average accuracy with Logistic Regression as the second best by 1%. When running these tests, SVM also took the longest to run compared to the other models. We plotted the average accuracies, along with their standard deviations in the box plots below. The written data represents average accuracy with their standard deviations in parenthesis.
+
+### `No PCA`
+- `LR: 0.676577 (0.022594)`
+- `RF: 0.742342 (0.030736)`
+- `KNN: 0.736937 (0.037966)`
+- `SVM: 0.731532 (0.047807)`
+- `DTC: 0.652252 (0.062572)`
 
 <img src="images/white.jpg" width = "10"/>
 
@@ -181,15 +180,12 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 
 <img src="images/white.jpg" width = "10"/>
 
-
-
-### `65% Variance`
-- `LR: 0.763333 (0.009693)`
-- `RF: 0.832933 (0.011172)`
-- `KNN: 0.807467 (0.008686)`
-- `SVM: 0.839600 (0.008925)`
-- `DTC: 0.748800 (0.012368)`
-
+### `PCA with 95% Variance`
+- `LR: 0.707207 (0.050200)`
+- `RF: 0.639640 (0.049672)`
+- `KNN: 0.664865 (0.050450)`
+- `SVM: 0.711712 (0.059759)`
+- `DTC: 0.618919 (0.020954)`
 
 <img src="images/white.jpg" width = "20"/>
 
@@ -203,8 +199,6 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 
 <img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/> _Plot 5. Comparison of Algorithms at 95% Variance_
 
-
-
 <img src="images/white.jpg" width = "10"/>
 
 # Conclusion
@@ -217,7 +211,6 @@ Across all 5 of these procedures, Support Vector Machine consistently had the hi
 - Anthony Marshall - Convolutional Neural Network
 - Ben Pooser - Supervised Learning Methods
 - Trevor Stanfield - Github pages maintenance
-
 
 # References
 [1] Brown, Ken. “Invasive Ductal Carcinoma (IDC) Breast Cancer: Johns Hopkins Breast Center.” Johns Hopkins Medicine, 3 Nov. 2017, www.hopkinsmedicine.org/breast_center/breast_cancers_other_conditions/invasive_ductal_carcinoma.html.
