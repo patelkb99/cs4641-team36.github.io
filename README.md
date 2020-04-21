@@ -117,7 +117,7 @@ In addition to the convolutional neural net, we ran other supervised learning mo
 First, we split the dataset into a training and testing set with an 80-20 split respectively. With such a large dataset size, we wanted to observe what would happen to our results and processing time if we ran PCA on the data. By running PCA on the data with a 95% variance, we would be able to reduce the number of features in our dataset while maintaining as much information as possible. Then, we normalized the data over the features. The variances can be visualized in graph 6.
 
 <p align="center">
-  <img src="images/scree.png" width ="400"/>
+  <img src="images/scree.png" width ="450"/>
   <br>
   <em>Graph 6. Cumulative Explained Variance vs. Number of Components</em>
 </p>
