@@ -112,7 +112,12 @@ _Image 2. Color Space Modification: LUV_
 
 The resulting learning curve shows the average loss and accuracy of the 5 validation folds plotted against the training data over 30 epochs. The recall chart was omitted because both the training and validation recall followed a strong logarithmic curve.
 
--- insert aforementioned curves --
+<div>
+<img src="images/white.jpg" width = "110"/>
+<img src="images/acc_curve.png" />
+<img src="images/white.jpg" width = "100"/>
+<img src="images/loss_curve.png" />
+</div>
 
 ![](images/IsToDo.png)
 
