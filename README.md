@@ -153,18 +153,18 @@ With such a large data set size, we wanted to observe what would happen to our r
 
 ## Results
 
-In the dataset without PCA, KNN, RF, and SVM had very similar average accuracies across the ten folds. However, among these methods, SVM had the highest spread of accuracies with the best accuracy being above 80%.
+In the dataset without PCA, on average, K-nearest neighbors, Random Forest, and Support Vector Machine had relatively similar average accuracies across the 10 folds. However, SVM had the highest average accuracy with the best accuracy being above 85%.
 
-In the dataset with PCA, the highest average accuracy with Logistic Regression as the second best by 1%. When running these tests, SVM also took the longest to run compared to the other models.
+In the dataset with PCA, SVM also had the highest average accuracy, with K-nearest neighbors as the second best by about 3%. When running these tests, SVM also took the longest to run compared to the other models
 
 The results for our supervised learning models both with and without PCA follow.
 
 ### `No PCA`
-- `LR: 0.676577 (0.022594)`
-- `RF: 0.742342 (0.030736)`
-- `KNN: 0.736937 (0.037966)`
-- `SVM: 0.731532 (0.047807)`
-- `DTC: 0.652252 (0.062572)`
+- `RF: 0.831286 (0.011019)`
+- `KNN: 0.802857 (0.011429)`
+- `SVM: 0.838286 (0.014802)`
+- `DTC: 0.752429 (0.013141)`
+- `LR: 0.688857 (0.013788)`
 
 <img src="images/white.jpg" width = "10"/>
 
@@ -178,11 +178,11 @@ The results for our supervised learning models both with and without PCA follow.
 <img src="images/white.jpg" width = "40"/>
 
 ### `PCA with 95% Variance`
-- `LR: 0.707207 (0.050200)`
-- `RF: 0.639640 (0.049672)`
-- `KNN: 0.664865 (0.050450)`
-- `SVM: 0.711712 (0.059759)`
-- `DTC: 0.618919 (0.020954)`
+- `RF: 0.779857 (0.013408)`
+- `KNN: 0.802286 (0.014529)`
+- `SVM: 0.839571 (0.014358)`
+- `DTC: 0.743429 (0.019527)`
+- `LR: 0.687286 (0.016592)`
 
 <img src="images/white.jpg" width = "10"/>
 
@@ -197,7 +197,7 @@ The results for our supervised learning models both with and without PCA follow.
 
 
 ## Discussion
-Initially, we expected methods which ran on the dataset with PCA to have a higher accuracy level because such a dataset would necessarily include less noise. However, as shown in our results, the methods which we ran on the dataset without PCA had better accuracies in general. One reason for this occurence may be that PCA does not take into consideration the prediction target. This would decrease accuracy because while PCA is reducing noise in the data set, it may also remove regions critical to determining the prediction target. Further, PCA may lessen its accuracy when applied to images as vectors instead of reducing them to two images, rotation, and scale because PCA is linear.
+Initially, we expected methods which ran on the dataset with PCA to have a higher accuracy level because such a dataset would necessarily include less noise. However, as shown in our results, the methods which we ran on the dataset without PCA had better accuracies in general. One reason for this occurence may be that PCA does not take into consideration the prediction target. This would decrease accuracy because while PCA is reducing noise in the data set, it may also remove regions critical to determining the prediction target. Also, since PCA is linear, it might hurt its accuracy when applied to images as vectors instead of reducing the images to 2 dimensions, rotation, and scale.
 
 
 
