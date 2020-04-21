@@ -106,10 +106,6 @@ _Image 2. Color Space Modification: LUV_
 
 <img src="images/white.jpg" width = "10"/>
 
--- Potential Visualization of network architecture. --
-
-![](images/IsToDo.png)
-
 The resulting learning curve shows the average loss and accuracy of the 5 validation folds plotted against the training data over 30 epochs. The recall chart was omitted because both the training and validation recall followed a strong logarithmic curve.
 
 <div>
