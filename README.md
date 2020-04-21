@@ -24,7 +24,7 @@ Images in this dataset are of size 50x50x3. Each file name follows this format, 
 <p align="center">
   <img src="images/dataSetExample.png"/>
   <br>
-  Image 1. Example of Images in Data Set
+  <em>Image 1. Example of Images in Data Set</em>
 </p>
 
 ## **Data Preprocessing**
@@ -38,7 +38,7 @@ We processed and split our dataset based on their class (0 for no IDC present an
 <p align="center">
   <img src="images/Graph_RatioP2N_CNN.png"/>
   <br>
-  Graph 1. Ratio of Negative to Positive Samples
+  <em>Graph 1. Ratio of Negative to Positive Samples</em>
 </p>
 
 # Methods
@@ -55,7 +55,7 @@ One of the initial observations of the data was that the number of positive samp
 <p align="center">
   <img src="images/Graph_RatioP2NManifold_CNN.png"/>
   <br>
-  Graph 2. Ratio of Negative to Positive Samples Five Folds
+  <em>Graph 2. Ratio of Negative to Positive Samples Five Folds</em>
 </p>
 
 The model was also improved by changing the color space of the input image. The RGB colorspace is a non-uniform colorspace, and it does not separate color from luminance like HSV or LUV do. The images are normalized and converted to the LUV colorspace as a result. LUV is perceptually linear and is therefore better for detecting color differences than RGB.
@@ -72,11 +72,11 @@ The model was also improved by changing the color space of the input image. The 
 </div>
 
 
-<img src="images/white.jpg" width = "30"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/>_Image 1. Color Space Modification: HSV_
+<img src="images/white.jpg" width = "30"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/>_Image 2. Color Space Modification: HSV_
 <img src="images/white.jpg" width = "20"/>
 <img src="images/white.jpg" width = "20"/>
 <img src="images/white.jpg" width = "10"/>
-_Image 2. Color Space Modification: LUV_
+_Image 3. Color Space Modification: LUV_
 
 
 <img src="images/white.jpg" width = "20"/>
@@ -89,7 +89,7 @@ After the data wrangling and preprocessing, the images were fed into a CNN with 
 
 <img src="images/CNNlayers.png"/>
 
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Graphic 1. Visualization of Graphics Layers_
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Image 4. Visualization of Graphics Layers_
 
 <img src="images/white.jpg" width = "10"/>
 
@@ -105,10 +105,10 @@ The resulting learning curve shows the average loss and accuracy of the five val
 </div>
 
 
-<img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/>_Plot 1. Accuracy Curve Across Five Validation Folds_
+<img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/>_Graph 3. Accuracy Curve Across Five Validation Folds_
 <img src="images/white.jpg" width = "30"/>
 <img src="images/white.jpg" width = "30"/>
-_Plot 2. Loss Curve Across Five Validation Folds_
+_Graph 4. Loss Curve Across Five Validation Folds_
 
 <img src="images/white.jpg" width = "40"/>
 
@@ -137,18 +137,18 @@ With such a large data set size, we wanted to observe what would happen to our r
 
 <img src="images/white.jpg" width = "1"/>
 
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Plot 1. Post-PCA Scree Plot_
+<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Graph 5. Cumulative Explained Variance vs. Number of Components_
 
 
 <img src="images/white.jpg" width = "10"/>
 
-## ResultsArchitecture
+## Results
 
 In the dataset without PCA, on average, KNN, RF, and SVM had relatively similar average accuracies across the 10 folds. However, SVM had the highest average accuracy with the best accuracy being above 85%.
 
 In the dataset with PCA, SVM also had the highest average accuracy, with KNN as the second best by approximately 4%. However, SVM took longer than any other method to complete.
 
-The results for our supervised learning models both with and without PCA follow.
+The average accuracies and their standard deviations for our supervised learning models both with and without PCA follow: 
 
 ### `No PCA`
 - `RF: 0.831286 (0.011019)`
@@ -157,16 +157,11 @@ The results for our supervised learning models both with and without PCA follow.
 - `DTC: 0.752429 (0.013141)`
 - `LR: 0.688857 (0.013788)`
 
-<img src="images/white.jpg" width = "10"/>
-
-<div>
-<img src="images/white.jpg" width = "10"/>
-<img src="images/no-pca2.png" width = "400"/>
-</div>
-
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "15"/> _Plot 2. Comparison of 5 Methods without PCA_
-
-<img src="images/white.jpg" width = "40"/>
+<p align="center">
+  <img src="images/no-pca2.png" width ="400"/>
+  <br>
+  <em>Graph 6. Comparison of 5 Methods without PCA</em>
+</p>
 
 ### `PCA with 95% Variance`
 - `RF: 0.779857 (0.013408)`
@@ -175,29 +170,16 @@ The results for our supervised learning models both with and without PCA follow.
 - `DTC: 0.743429 (0.019527)`
 - `LR: 0.687286 (0.016592)`
 
-<img src="images/white.jpg" width = "10"/>
-
-<div>
-<img src="images/white.jpg" width = "10"/>
-<img src="images/with-pca2.png" width = "400"/>
-</div>
-
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "15"/> _Plot 3. Comparison of 5 Methods with PCA_
-
-<img src="images/white.jpg" width = "40"/>
-
+<p align="center">
+  <img src="images/with-pca2.png" width ="400"/>
+  <br>
+  <em>Graph 7. Comparison of 5 Methods with PCA</em>
+</p>
 
 ## Discussion
-<<<<<<< HEAD
 Initially, we expected methods which ran on the dataset with PCA to have a higher accuracy level because such a dataset would necessarily include less noise. However, as shown in our results, the methods which we ran on the dataset without PCA had better accuracies in general. One reason for this occurence may be that PCA does not take into consideration the prediction target. This would decrease accuracy because while PCA is reducing noise in the data set, it may also remove regions critical to determining the prediction target.
-=======
-Initially, we expected methods which ran on the dataset with PCA to have a higher accuracy level because such a dataset would necessarily include less noise. However, as shown in our results, the methods which we ran on the dataset without PCA had better accuracies in general. One reason for this occurence may be that PCA does not take into consideration the prediction target. This would decrease accuracy because while PCA is reducing noise in the data set, it may also remove regions critical to determining the prediction target. Also, since PCA is linear, it might hurt its accuracy when applied to images as vectors instead of reducing the images to 2 dimensions, rotation, and scale.
->>>>>>> parent of 65c6299... Quick change
-
-
 
 # Conclusion
-
 
 ![](images/IsToDo.png)
 
@@ -218,7 +200,6 @@ Initially, we expected methods which ran on the dataset with PCA to have a highe
 [4] “U.S. Breast Cancer Statistics.” Breastcancer.org, 27 Jan. 2020, www.breastcancer.org/symptoms/understand_bc/statistics.
 
 [5] “Use Case 6: Invasive Ductal Carcinoma (IDC) Segmentation.” Andrew Janowczyk, 5 Jan. 2018, www.andrewjanowczyk.com/use-case-6-invasive-ductal-carcinoma-idc-segmentation/.
-
 
 
 <!-- ## Welcome to GitHub Pages
