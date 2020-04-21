@@ -100,7 +100,7 @@ There are several things that could be implemented that might result in an incre
 The CNN architecture could also improve. With more time and experimentation, we potentially could have performed more experimentation with the layers of our model. Additionally, if there were more available computational resources, more hyperparameter tuning could occur. As previously mentioned, the validation recall continually increased with the training recall. The key issue is balancing the recall precision tradeoff.
 
 <p align="center">
-  <img src="images/confusion-matrix.png"/>
+  <img src="images/confusion-matrix.png" width="500"/>
   <br>
   <em>Graph 5. Confusion Matrix</em>
 </p>
