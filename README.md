@@ -80,7 +80,7 @@ The model was also improved by changing the color space of the input image. The 
 
 <div>
 <img src="images/white.jpg" width = "110"/>
-<img src="images/ColorSpace_HSV.png" />
+<img src="images/hsv.png" />
 <img src="images/white.jpg" width = "100"/>
 <img src="images/ColorSpace_LUV.png" />
 </div>
