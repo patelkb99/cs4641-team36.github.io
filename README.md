@@ -65,9 +65,8 @@ The model was also improved by changing the color space of the input image. The 
   <img src="images/white.jpg" width = "50"/>
   <img src="images/ColorSpace_LUV.png" />
   <br>
-  
   <em>Image 2. Color Space Modification: HSV</em>
-  <img src="images/white.jpg" width = "50"/>
+  <img src="images/white.jpg" width = "30"/>
   <em>Image 3. Color Space Modification: LUV</em>
 </p>
 
@@ -83,13 +82,12 @@ After the data wrangling and preprocessing, the images were fed into a CNN with 
 The resulting learning curve shows the average loss and accuracy of the five validation folds plotted against the training data over 30 epochs. The recall chart was omitted because both the training and validation recall followed a strong logarithmic curve.
 
 <p align="center">
-  <img class="cen" src="images/acc_curve.png" />
+  <img src="images/acc_curve.png" />
+  <img src="images/white.jpg" width = "30"/>
+  <img src="images/losscurve.png" />
   <br>
   <em>Graph 3. Accuracy Curve Across Five Validation Folds</em>
-</p>
-<p align="center">
-  <img class="cen" src="images/losscurve.png" />
-  <br>
+  <img src="images/white.jpg" width = "30"/>
   <em>Graph 4. Loss Curve Across Five Validation Folds</em>
 </p>
 
