@@ -36,7 +36,7 @@ We processed the data, and based on their class (0 for non-cancerous and 1 for c
 ## **Convolutional Neural Network**
 
 ### Approach
-A convolutional neural network (CNN) is one of the most commonly used algorithms for image classification tasks. Using a CNN, we were able to achieve a recall of x percent and an accuracy of y percent. Before training our CNN on our data, there were several preprocessing steps that needed to occur.
+We chose to use a convolutional neural network (CNN) for detecting IDC because of its ability to identify the defining spatial properties of images and because of its pervasiveness throughout fields involving image classification such as computer vision.  Using a CNN, we were able to achieve a recall of x percent and an accuracy of y percent. Before training our CNN on our data, there were several preprocessing steps that needed to occur.
 
 One of the initial observations of the data was that the number of positive samples was significantly lower than the number of negative samples.
 
@@ -71,7 +71,7 @@ The imbalanced class distributions will lead to our model generalizing poorly. T
 
 <img src="images/white.jpg" width = "10"/>
 
-The model was also improved by changing the color space of the input image. The RGB colorspace is a non-uniform colorspace, and it does not separate color from luminanceance like HSV or LUV do. The images are normalized and converted to the LUV colorspace as a result. LUV is perceptually linear and is therefore better for detecting color differences than RGB.
+The model was also improved by changing the color space of the input image. The RGB colorspace is a non-uniform colorspace, and it does not separate color from luminance like HSV or LUV do. The images are normalized and converted to the LUV colorspace as a result. LUV is perceptually linear and is therefore better for detecting color differences than RGB.
 
 
 <!-- ![Image 1. Color Space Modification: HSV](images/ColorSpace_HSV.png) ![Image 2. Color Space Modification: LUV](images/ColorSpace_LUV.png) -->
