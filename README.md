@@ -60,46 +60,20 @@ One of the initial observations of the data was that the number of positive samp
 
 The model was also improved by changing the color space of the input image. The RGB colorspace is a non-uniform colorspace, and it does not separate color from luminance like HSV or LUV do. The images are normalized and converted to the LUV colorspace as a result. LUV is perceptually linear and is therefore better for detecting color differences than RGB.
 
-<div display="inline-block">
-  <p align="center">
-    <img src="images/ColorSpace_HSV.png"/>
-    <br>
-    <em>_Image 2. Color Space Modification: HSV_</em>
-  </p>
-  <p align="center">
-    <img src="images/ColorSpace_LUV.png"/>
-    <br>
-    <em>Image 3. Color Space Modification: LUV</em>
-  </p>
-</div>
+<br>
+<p align="center">
+  <img src="images/ColorSpace_HSV.png" style="margin:100px"/>
+  <img src="images/ColorSpace_LUV.png" style="margin:100px" />
+  <em>Image 2. Color Space Modification: HSV</em>
+  <em>Image 3. Color Space Modification: LUV</em>
+</p>
 
-<!-- ![Image 1. Color Space Modification: HSV](images/ColorSpace_HSV.png) 
-![Image 2. Color Space Modification: LUV](images/ColorSpace_LUV.png) -->
-
-<!-- <img src="images/white.jpg" width = "10"/>
-
-<div>
-<img src="images/white.jpg" width = "110"/>
-<img src="images/hsv.png" />
-<img src="images/white.jpg" width = "100"/>
-<img src="images/ColorSpace_LUV.png" />
-</div>
-
-
-<img src="images/white.jpg" width = "30"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/>_Image 2. Color Space Modification: HSV_
-<img src="images/white.jpg" width = "20"/>
-<img src="images/white.jpg" width = "20"/>
-<img src="images/white.jpg" width = "10"/>
-_Image 3. Color Space Modification: LUV_
-
-
-<img src="images/white.jpg" width = "20"/> -->
+<br>
 
 ### The CNN Architecture
 After the data wrangling and preprocessing, the images were fed into a CNN with seven convolution layers, three max pooling layers, a hidden dense layer, and an output layer. We also incorporated dropout layers into our model to help prevent overfitting the data.
 
-<img src="images/white.jpg" width = "10"/>
-
+<br>
 
 <img src="images/CNNlayers.png"/>
 
