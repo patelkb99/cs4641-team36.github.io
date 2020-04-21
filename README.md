@@ -62,8 +62,9 @@ The model was also improved by changing the color space of the input image. The 
 
 <br>
 <p align="center">
-  <img src="images/ColorSpace_HSV.png" style="margin:100px"/>
-  <img src="images/ColorSpace_LUV.png" style="margin:100px" />
+  <img class="cen" src="images/ColorSpace_HSV.png" />
+  <img class="cen" src="images/ColorSpace_LUV.png" />
+  <br>
   <em>Image 2. Color Space Modification: HSV</em>
   <em>Image 3. Color Space Modification: LUV</em>
 </p>
