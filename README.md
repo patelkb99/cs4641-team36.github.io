@@ -99,18 +99,24 @@ There are several things that could be implemented that might result in an incre
 
 The CNN architecture could also improve. With more time and experimentation, we potentially could have performed more experimentation with the layers of our model. Additionally, if there were more available computational resources, more hyperparameter tuning could occur. As previously mentioned, the validation recall continually increased with the training recall. The key issue is balancing the recall precision tradeoff. 
 
+<p align="center">
+  <img src="images/confusion-matrix.png"/>
+  <br>
+  <em>Graph 5. Confusion Matrix</em>
+</p>
+
 ## Supervised Learning Models
 ### Linear Regression, k-Nearest Neighbors, Support Vector Machine, and Neural Network
 
 In addition to the convolutional neural net, we ran other supervised learning models: Logistic Regression (LR), K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Random Forest (RF), and Decision Tree Classifier (DTC). We utilized sklearn’s Kfold and split the dataset into ten training tests. Then we used sklearn’s LogisticRegression, RandomForestClassifier, KNeighborsClassifier, Support Vector Machine SVC, DecisionTreeClassifier and compared their mean accuracies. We ran these methods twice: first on the dataset without preprocessing and then once again on a dataset that we had preprocessed with PCA.
 
 ### Data Preprocessing
-First, we split the dataset into a training and testing set with an 80-20 split respectively. With such a large dataset size, we wanted to observe what would happen to our results and processing time if we ran PCA on the data. By running PCA on the data with a 95% variance, we would be able to reduce the number of features in our dataset while maintaining as much information as possible. Then, we normalized the data over the features. The variances can be visualized in graph 5.
+First, we split the dataset into a training and testing set with an 80-20 split respectively. With such a large dataset size, we wanted to observe what would happen to our results and processing time if we ran PCA on the data. By running PCA on the data with a 95% variance, we would be able to reduce the number of features in our dataset while maintaining as much information as possible. Then, we normalized the data over the features. The variances can be visualized in graph 6.
 
 <p align="center">
   <img src="images/scree.png" width ="400"/>
   <br>
-  <em>Graph 5. Cumulative Explained Variance vs. Number of Components</em>
+  <em>Graph 6. Cumulative Explained Variance vs. Number of Components</em>
 </p>
 
 ### Results
@@ -131,7 +137,7 @@ The average accuracies and their standard deviations for our supervised learning
 <p align="center">
   <img src="images/no-pca2.png" width ="400"/>
   <br>
-  <em>Graph 6. Comparison of 5 Methods without PCA</em>
+  <em>Graph 7. Comparison of 5 Methods without PCA</em>
 </p>
 
 #### `PCA with 95% Variance`
@@ -144,7 +150,7 @@ The average accuracies and their standard deviations for our supervised learning
 <p align="center">
   <img src="images/with-pca2.png" width ="400"/>
   <br>
-  <em>Graph 7. Comparison of 5 Methods with PCA</em>
+  <em>Graph 8. Comparison of 5 Methods with PCA</em>
 </p>
 
 ### Discussion
