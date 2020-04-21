@@ -62,11 +62,11 @@ The model was also improved by changing the color space of the input image. The 
 
 <p align="center">
   <img src="images/ColorSpace_HSV.png" />
-  <img src="images/white.jpg" width = "50"/>
+  <img src="images/white.jpg" width = "30" height="10"/>
   <img src="images/ColorSpace_LUV.png" />
   <br>
   <em>Image 2. Color Space Modification: HSV</em>
-  <img src="images/white.jpg" width = "30"/>
+  <img src="images/white.jpg" width = "30" height="10"/>
   <em>Image 3. Color Space Modification: LUV</em>
 </p>
 
@@ -83,11 +83,11 @@ The resulting learning curve shows the average loss and accuracy of the five val
 
 <p align="center">
   <img src="images/acc_curve.png" />
-  <img src="images/white.jpg" width = "30"/>
-  <img src="images/losscurve.png" />
+  <img src="images/white.jpg" width = "25" height="10"/>
+  <img src="images/losscurve.png"/>
   <br>
   <em>Graph 3. Accuracy Curve Across Five Validation Folds</em>
-  <img src="images/white.jpg" width = "30"/>
+  <img src="images/white.jpg" width = "50" height="10"/>
   <em>Graph 4. Loss Curve Across Five Validation Folds</em>
 </p>
 
