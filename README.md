@@ -129,26 +129,6 @@ _Plot 2. Loss Curve Across Five Validation Folds_
 
 From these charts, we can see that both the validation loss and validation accuracy peak at the 16th epoch. The model is then trained on the full 80% training split over 16 epochs.
 
--- confusion matrix
-
-![](images/IsToDo.png)
-
---blurb describing next --
-
-![](images/IsToDo.png)
-
---blurb
-
-![](images/IsToDo.png)
-
---heat map
-
-![](images/IsToDo.png)
-
---Results--
-
-![](images/IsToDo.png)
-
 # Supervised Learning Models
 ###### Linear Regression, k-Nearest Neighbors, Support Vector Machine, and Neural Network
 
