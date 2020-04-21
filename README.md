@@ -21,15 +21,25 @@ Images in this dataset are of size 50x50x3. Each file name follows this format, 
 
 ### Example of the images:
 
-![Examples of Dataset](./images/dataSetExample.png)
+<p align="center">
+  <img src="images/dataSetExample.png"/>
+  <br>
+  Image 1. Example of Images in Data Set
+</p>
 
 ## **Data Preprocessing**
 
-We processed the data, and based on their class (0 for non-cancerous and 1 for cancerous), we were able to split our dataset. From this, we learned that these images contained 277524 total patches that we could analyze.
+We processed and split our dataset based on their class (0 for no IDC present and 1 IDC present). The following are the ratios of negative to positive:
 
 - `Total Image Patches:  277524`
 - `Total Positive Patches:  78786`
 - `Total Negative Patches:  198738`
+
+<p align="center">
+  <img src="images/Graph_RatioP2N_CNN.png"/>
+  <br>
+  Graph 1. Ratio of Negative to Positive Samples
+</p>
 
 # Methods
 
@@ -40,34 +50,13 @@ We chose to use a Convolutional Neural Network (CNN) for detecting IDC because o
 
 Before we could train our network, some data preprocessing tasks had to occur. 
 
-One of the initial observations of the data was that the number of positive samples was much lower than the number of negative samples.
+One of the initial observations of the data was that the number of positive samples was much lower than the number of negative samples, as shown in Graph 1. The imbalanced class distributions will lead to our model generalizing poorly. This problem is exacerbated if we have unrepresentative test/train splits. In order to combat the unbalanced class problem and increase the generalizability of our model, we used stratified k-fold validation over 80% of the data. The other 20% was saved for testing. By using stratified k-fold validation, we ensured that each validation fold had an even proportion of positive and negative samples.
 
-<!-- ![Graph 1. Ratio of Negative to Positive Samples](images/Graph_RatioP2N_CNN.png) -->
-<img src="images/white.jpg" width = "10"/>
-<div>
-<img src="images/white.jpg" width = "200"/>
-<img src="images/Graph_RatioP2N_CNN.png" width = "400"/>
-</div>
-
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Graph 1. Ratio of Negative to Positive Samples_
-
-<img src="images/white.jpg" width = "10"/>
-
-The imbalanced class distributions will lead to our model generalizing poorly. This problem is exacerbated if we have unrepresentative test/train splits. In order to combat the unbalanced class problem and increase the generalizability of our model, we used stratified k-fold validation over 80% of the data. The other 20% was saved for testing. By using stratified k-fold validation, we ensured that each validation fold had an even proportion of positive and negative samples.
-
-<!-- ![Graph 2. Ratio of Negative to Positive Samples Manifold](images/Graph_RatioP2NManifold_CNN.png) -->
-
-<img src="images/white.jpg" width = "10"/>
-
-<div>
-<img src="images/white.jpg" width = "200"/>
-<img src="images/Graph_RatioP2NManifold_CNN.png" width = "400"/>
-</div>
-
-<img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "10"/><img src="images/white.jpg" width = "20"/><img src="images/white.jpg" width = "10"/>_Graph 2. Ratio of Negative to Positive Samples Five Folds_
-
-
-<img src="images/white.jpg" width = "10"/>
+<p align="center">
+  <img src="images/Graph_RatioP2NManifold_CNN.png"/>
+  <br>
+  Graph 2. Ratio of Negative to Positive Samples Five Folds
+</p>
 
 The model was also improved by changing the color space of the input image. The RGB colorspace is a non-uniform colorspace, and it does not separate color from luminance like HSV or LUV do. The images are normalized and converted to the LUV colorspace as a result. LUV is perceptually linear and is therefore better for detecting color differences than RGB.
 
