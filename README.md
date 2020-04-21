@@ -116,12 +116,11 @@ The resulting learning curve shows the average loss and accuracy of the 5 valida
 <img src="images/white.jpg" width = "110"/>
 <img src="images/acc_curve.png" />
 <img src="images/white.jpg" width = "100"/>
-<img src="images/loss_curve.png" />
+<img src="images/losscurve.png" />
 </div>
 
-![](images/IsToDo.png)
 
-From these charts, we can see that the validation loss is at a minimum at the x epoch and that the validation accuracy peaks at the y epoch. Because of this, the final model was trained over z epochs.
+From these charts, we can see that both the validation loss and validation accruacy peak at the 16th epoch. The model is then trained on the full 80 percent training split over 16 epochs. 
 
 -- confusion matrix
 
