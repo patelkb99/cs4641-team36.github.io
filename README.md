@@ -137,7 +137,7 @@ The average accuracies and their standard deviations for our supervised learning
 <p align="center">
   <img src="images/no-pca2.png" width ="400"/>
   <br>
-  <em>Graph 6. Comparison of Five Methods without PCA</em>
+  <em>Graph 7. Comparison of Five Methods without PCA</em>
 </p>
 
 #### `PCA with 95% Variance`
@@ -150,7 +150,7 @@ The average accuracies and their standard deviations for our supervised learning
 <p align="center">
   <img src="images/with-pca2.png" width ="400"/>
   <br>
-  <em>Graph 7. Comparison of Five Methods with PCA</em>
+  <em>Graph 8. Comparison of Five Methods with PCA</em>
 </p>
 
 ### Discussion
